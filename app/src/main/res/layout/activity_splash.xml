@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/splash_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.learn.learning.activitys.SplashActivity">
+
+        <ImageView
+            android:id="@+id/iv_default"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</layout>
