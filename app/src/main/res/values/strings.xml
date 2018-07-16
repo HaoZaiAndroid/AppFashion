@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fashion</string>
+    <string name="home_fragment_title">导航页</string>
 </resources>
