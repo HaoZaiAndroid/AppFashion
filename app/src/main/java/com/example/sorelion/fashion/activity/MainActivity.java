@@ -4,6 +4,7 @@ package com.example.sorelion.fashion.activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.example.sorelion.fashion.R;
 import com.example.sorelion.fashion.fragment.BaseFragment;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initFragment();
         addShowAndHideFragment(mFragmentList.get(0));
+        Log.d("yh", "test git");
     }
 
     private void initFragment() {
