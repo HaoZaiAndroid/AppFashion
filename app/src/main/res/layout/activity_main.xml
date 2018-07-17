@@ -1,19 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.sorelion.fashion.activity.MainActivity">
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/colorTheme">
 
-        <FrameLayout
-            android:id="@+id/main_FrameLayout"
+            <RelativeLayout
+
+                android:id="@+id/ll_title_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_title_menu"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/titlebar_menu" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:theme="@style/AppTheme">
+
+                <ImageView
+                    android:id="@+id/iv_title_one"
+                    android:layout_width="@dimen/titlebar_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/titlebar_music" />
+
+                <ImageView
+                    android:id="@+id/iv_title_two"
+                    android:layout_width="@dimen/titlebar_height"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/titlebar_disco" />
+
+                <ImageView
+                    android:id="@+id/iv_title_three"
+                    android:layout_width="@dimen/titlebar_height"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/titlebar_friends" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_view_pager"
+            android:layout_below="@+id/title_bar"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        </FrameLayout>
+        </android.support.v4.view.ViewPager>
 
     </RelativeLayout>
 </layout>
