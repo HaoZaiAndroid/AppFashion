@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.example.sorelion.fashion"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -25,7 +26,6 @@ dependencies {
     //noinspection GradleCompatible
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
     //权限管理框架   https://github.com/yanzhenjie/AndPermission
     //    implementation 'com.yanzhenjie:permission:2.0.0-rc11'
     implementation 'com.github.bumptech.glide:glide:4.7.1'
