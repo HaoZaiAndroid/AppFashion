@@ -1,7 +1,4 @@
 package com.example.sorelion.fashion.activity;
-
-
-
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -21,7 +18,6 @@ import com.example.sorelion.fashion.fragment.VideoFragment;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private static final int TAB_MUSIC_INDEX = 0;
@@ -51,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initID();
         initFragment();
         initListener();
-        setCurrentItem(TAB_MUSIC_INDEX);
+        setCurrentItem(TAB_RECOMMEND_INDEX);
     }
 
     private void initListener() {

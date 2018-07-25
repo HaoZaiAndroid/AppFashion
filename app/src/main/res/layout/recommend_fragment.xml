@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
+        android:id="@+id/root_recommend"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:text="recommend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/title_tab"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            app:tabBackground="@drawable/ripple_tab_bg"
+            app:tabIndicatorColor="@color/colorTheme"
+            app:tabSelectedTextColor="@color/colorTheme"
+            app:tabTextColor="@color/colorTabText" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_tab">
+
+        </android.support.v4.view.ViewPager>
+
+
     </RelativeLayout>
 </layout>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Fashion</string>
     <string name="home_fragment_title">导航页</string>
+    <string name="recommend_tab_one">精选</string>
+    <string name="recommend_tab_two">书籍</string>
+    <string name="recommend_tab_three">电台</string>
 </resources>
