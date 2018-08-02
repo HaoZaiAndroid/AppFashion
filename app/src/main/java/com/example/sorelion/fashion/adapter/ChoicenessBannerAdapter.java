@@ -6,16 +6,14 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.sorelion.fashion.R;
 import com.example.sorelion.fashion.app.GlideApp;
 import com.example.sorelion.fashion.base.BaseRecyclerViewAdapter;
 import com.example.sorelion.fashion.base.BaseRecyclerViewHolder;
-import com.example.sorelion.fashion.bean.ChoicenessBannerBean;
+import com.example.sorelion.fashion.bean.BannerBean;
 import com.example.sorelion.fashion.databinding.ItemChoicenessBannerBinding;
 
-public class ChoicenessBannerAdapter extends BaseRecyclerViewAdapter<ChoicenessBannerBean>{
+public class ChoicenessBannerAdapter extends BaseRecyclerViewAdapter<BannerBean.DataBean>{
 
     private Context context;
 
@@ -31,15 +29,15 @@ public class ChoicenessBannerAdapter extends BaseRecyclerViewAdapter<ChoicenessB
         holder.onBindViewHolder(data.get(position), position);
     }
 
-    private class ViewHolder extends BaseRecyclerViewHolder<ChoicenessBannerBean, ItemChoicenessBannerBinding>{
+    private class ViewHolder extends BaseRecyclerViewHolder<BannerBean.DataBean, ItemChoicenessBannerBinding>{
 
         public ViewHolder(ViewGroup viewGroup, int layoutId) {
             super(viewGroup, layoutId);
         }
 
         @Override
-        public void onBindViewHolder(ChoicenessBannerBean object, int position) {
-            GlideApp.with(context).load(object.getUrl())
+        public void onBindViewHolder(BannerBean.DataBean object, int position) {
+            GlideApp.with(context).load(object.getImagePath())
                     .placeholder(R.mipmap.img_two_bi_one)
                     .error(R.mipmap.img_two_bi_one)
                     .transforms(new CenterCrop())
