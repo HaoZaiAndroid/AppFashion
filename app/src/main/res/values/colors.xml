@@ -31,7 +31,7 @@
     <color name="colorLineItem">#FFDDDDDD</color>
 
     <!--tab标签栏文字的颜色-->
-    <color name="colorTabText">#585858</color>
+    <color name="colorTabText">#FFD7D4</color>
     <!--正文文字颜色-->
     <color name="colorContent">#ff333333</color>
     <!--水波纹或5.0以下选择器颜色-->
