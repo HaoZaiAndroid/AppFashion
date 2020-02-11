@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.sorelion.fashion.activity.MainActivity">
+        tools:context="com.android.fashion.activity.MainActivity">
         <RelativeLayout
             android:id="@+id/title_bar"
             android:layout_width="match_parent"

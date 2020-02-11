@@ -16,7 +16,7 @@
             <!--app:tabSelectedTextColor="@color/colorTheme"-->
             <!--app:tabTextColor="@color/colorTabText" />-->
 
-        <com.example.sorelion.fashion.widget.tablayout.TabLayout
+        <com.android.fashion.widget.tablayout.TabLayout
             android:id="@+id/title_tab"
             style="@style/CustomerTabLayout"
             android:layout_width="match_parent"
